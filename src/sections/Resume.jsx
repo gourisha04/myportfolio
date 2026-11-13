@@ -1,13 +1,13 @@
 import React from 'react';
 import SectionHeading from '../components/SectionHeading';
-import { Download, ExternalLink, FileText, CheckCircle2, ShieldCheck, Eye } from 'lucide-react';
+import { Download, ExternalLink, FileText, CheckCircle2, Eye } from 'lucide-react';
 
 export default function Resume() {
   return (
     <section id="resume" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="07 / CREDENTIALS"
+          tag="Resume"
           title="Curriculum Vitae & Resume"
           subtitle="Download or view my complete technical resume formatted for recruitment review."
         />
@@ -31,9 +31,9 @@ export default function Resume() {
                   Format: PDF • Size: ~225 KB
                 </p>
 
-                <div className="mt-3 pt-2.5 border-t border-ink-border/60 flex items-center justify-center gap-1.5 text-xs font-mono text-emerald-700">
-                  <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                  <span>Verified & Up-to-Date</span>
+                <div className="mt-3 pt-2.5 border-t border-ink-border/60 flex items-center justify-center gap-1.5 text-xs font-mono text-ink-muted">
+                  <FileText className="w-3.5 h-3.5 text-burnt" />
+                  <span>PDF Format</span>
                 </div>
               </div>
             </div>
@@ -41,11 +41,8 @@ export default function Resume() {
             {/* Content & Actions */}
             <div className="md:col-span-7 space-y-4">
               <div>
-                <span className="font-mono text-xs uppercase tracking-ultra text-burnt font-semibold block mb-0.5">
-                  Official Document
-                </span>
                 <h3 className="font-display font-extrabold text-xl sm:text-2xl text-ink">
-                  Ready for Review & Hiring Pipelines
+                  Download My Resume
                 </h3>
               </div>
 

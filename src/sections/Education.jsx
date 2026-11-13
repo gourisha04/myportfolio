@@ -8,7 +8,7 @@ export default function Education() {
     <section id="education" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50 bg-ivory-100/40">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="06 / ACADEMIC BACKGROUND"
+          tag="Education"
           title="Education & Credentials"
           subtitle="Formal foundation in computer science, software design, and engineering fundamentals."
         />

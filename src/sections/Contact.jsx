@@ -134,7 +134,7 @@ export default function Contact() {
     <section id="contact" className="py-14 sm:py-16 lg:py-20 bg-ivory-100/60 border-t border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="08 / GET IN TOUCH"
+          tag="Contact"
           title="Let's build something exceptional together."
           subtitle="Open for full-time frontend engineering roles, React development, and freelance technical collaborations."
         />

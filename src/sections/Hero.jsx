@@ -168,7 +168,7 @@ export default function Hero() {
             <span className="w-1.5 h-1.5 rounded-full bg-burnt animate-pulse" />
             <span>Scroll to explore</span>
           </div>
-          <span className="hidden sm:inline">01 / 07 — Overview</span>
+          <span className="hidden sm:inline text-burnt font-semibold">Portfolio — 2026</span>
         </div>
       </div>
     </section>

@@ -8,7 +8,7 @@ export default function Experience() {
     <section id="experience" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50 bg-ivory-100/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="04 / CAREER HISTORY"
+          tag="Experience"
           title="Professional Experience"
           subtitle="Work experience, internships, and collaborative software engineering."
         />

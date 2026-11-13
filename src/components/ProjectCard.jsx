@@ -75,13 +75,14 @@ export default function ProjectCard({ project, index, variant = 'featured' }) {
         >
           <div className="relative rounded-xl overflow-hidden border border-ink-border bg-ivory-100 aspect-[16/10] sm:aspect-[4/3] lg:aspect-[16/11] max-h-[250px] sm:max-h-[280px] flex items-center justify-center group-hover:border-burnt/50 transition-colors">
             {project.image ? (
-              <div className="w-full h-full relative overflow-hidden flex items-center justify-center p-4 bg-gradient-to-br from-ivory-50 to-ivory-200">
+              <div className="w-full h-full relative overflow-hidden">
                 <img
                   src={project.image}
                   alt={`${project.title} Preview`}
-                  className="max-h-full max-w-full object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/30 via-transparent to-transparent" />
               </div>
             ) : (
               <div className="w-full h-full flex flex-col items-center justify-center p-6 text-center bg-ivory-200">
@@ -90,7 +91,7 @@ export default function ProjectCard({ project, index, variant = 'featured' }) {
                   {project.title}
                 </span>
                 <span className="text-[11px] font-mono text-ink-muted">
-                  Interactive Showcase
+                  Screenshot Coming Soon
                 </span>
               </div>
             )}
@@ -104,11 +105,6 @@ export default function ProjectCard({ project, index, variant = 'featured' }) {
                 </span>
               )}
             </div>
-
-            {/* Editorial Number */}
-            <div className="absolute bottom-2 right-3 font-display font-extrabold text-5xl lg:text-6xl text-charcoal/5 pointer-events-none select-none">
-              {project.number}
-            </div>
           </div>
         </div>
 
@@ -121,7 +117,7 @@ export default function ProjectCard({ project, index, variant = 'featured' }) {
           {/* Header Row */}
           <div className="flex items-center justify-between gap-3 mb-1.5">
             <span className="font-mono text-xs font-semibold text-burnt uppercase tracking-wider">
-              PROJECT {project.number} — {project.category}
+              {project.category}
             </span>
             <span className="font-mono text-xs text-ink-muted">
               {project.period}

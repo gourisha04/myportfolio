@@ -7,7 +7,7 @@ export default function About() {
     <section id="about" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="02 / ABOUT ME"
+          tag="About Me"
           title="Bridging design sensibility with engineering rigor."
           subtitle="A developer focused on crafting responsive web experiences that prioritize clarity, performance, and real-world utility."
         />
@@ -21,11 +21,11 @@ export default function About() {
             </p>
 
             <p>
-              Over the course of my academic foundation and internship at <strong className="text-ink font-semibold">Gravit Infosystem</strong>, my passion consolidated around frontend and full-stack development. I enjoy translating complex user requirements into performant interfaces that feel natural and intuitive to navigate.
+              During my internship at <strong className="text-ink font-semibold">Gravit Infosystem</strong>, I worked on frontend development tasks and strengthened my understanding of real-world development workflows. My interest consolidates around frontend and full-stack development — turning complex requirements into responsive, intuitive interfaces.
             </p>
 
             <p>
-              Working as the lead full-stack developer on a real client platform—<strong className="text-ink font-semibold">Geet Studio</strong>—taught me how to handle business requirements end-to-end: from designing database schemas and multi-role access control to building responsive UI components and analytics engines that real people depend on every day.
+              I had the opportunity to build <strong className="text-ink font-semibold">Geet Studio</strong> — a full-stack web platform for a real client — covering everything from database schemas and authentication to responsive UI components and an analytics reporting system.
             </p>
 
             <p>

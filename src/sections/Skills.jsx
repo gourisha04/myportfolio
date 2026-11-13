@@ -15,7 +15,7 @@ export default function Skills() {
     <section id="skills" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
-          tag="05 / TECHNICAL STACK"
+          tag="Skills & Technologies"
           title="Skills & Technologies"
           subtitle="A focused, verified toolkit for building high-performance modern web applications."
         />
@@ -62,9 +62,6 @@ export default function Skills() {
                         <div className="flex items-center gap-2">
                           <span className="text-[11px] font-mono text-ink-muted">
                             {skill.highlight}
-                          </span>
-                          <span className="px-2 py-0.5 rounded text-[10px] font-mono uppercase tracking-wider bg-white border border-ink-border text-burnt font-semibold">
-                            {skill.level}
                           </span>
                         </div>
                       </div>
