@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -7,21 +7,21 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-charcoal text-ivory-100 pt-16 pb-12 border-t border-charcoal-50">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-charcoal-50/80">
+    <footer className="bg-charcoal text-ivory-100 pt-12 pb-8 border-t border-charcoal-50">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-charcoal-50/80">
           
           {/* Brand & Positioning */}
-          <div className="md:col-span-6 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-full bg-burnt text-white font-display font-extrabold text-sm flex items-center justify-center">
+          <div className="md:col-span-6 space-y-3">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-full bg-burnt text-white font-display font-extrabold text-xs flex items-center justify-center">
                 GR
               </div>
-              <span className="font-display font-extrabold text-xl tracking-tight text-white">
+              <span className="font-display font-extrabold text-lg tracking-tight text-white">
                 Gourisha Rathore
               </span>
             </div>
-            <p className="text-gray-400 text-sm max-w-md leading-relaxed">
+            <p className="text-gray-400 text-xs sm:text-sm max-w-md leading-relaxed">
               Frontend & MERN Stack Developer building responsive, user-centered web applications with clean code, modern design, and robust architecture.
             </p>
             <div className="flex items-center gap-2 text-xs font-mono text-gray-400">
@@ -31,11 +31,11 @@ export default function Footer() {
           </div>
 
           {/* Quick Navigation */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-3 space-y-2.5">
             <span className="block font-mono text-xs uppercase tracking-ultra text-burnt font-semibold">
               Navigation
             </span>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-1.5 text-xs sm:text-sm text-gray-300">
               <li>
                 <a href="#about" className="hover:text-burnt transition-colors">
                   About Me
@@ -58,18 +58,18 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#education" className="hover:text-burnt transition-colors">
-                  Education
+                  Education & Credentials
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Socials & Location */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-3 space-y-2.5">
             <span className="block font-mono text-xs uppercase tracking-ultra text-burnt font-semibold">
               Connect
             </span>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-2 text-xs sm:text-sm text-gray-300">
               <li>
                 <a
                   href="https://www.linkedin.com/in/gourisha-rathore-b80826294"
@@ -77,7 +77,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-burnt transition-colors"
                 >
-                  <Linkedin className="w-4 h-4 text-burnt" />
+                  <Linkedin className="w-3.5 h-3.5 text-burnt" />
                   <span>LinkedIn Profile</span>
                 </a>
               </li>
@@ -88,7 +88,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-burnt transition-colors"
                 >
-                  <Github className="w-4 h-4 text-burnt" />
+                  <Github className="w-3.5 h-3.5 text-burnt" />
                   <span>GitHub (@gourisha04)</span>
                 </a>
               </li>
@@ -97,7 +97,7 @@ export default function Footer() {
                   href="mailto:gourisharathore@gmail.com"
                   className="flex items-center gap-2 hover:text-burnt transition-colors"
                 >
-                  <Mail className="w-4 h-4 text-burnt" />
+                  <Mail className="w-3.5 h-3.5 text-burnt" />
                   <span>gourisharathore@gmail.com</span>
                 </a>
               </li>
@@ -106,11 +106,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-gray-400">
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono text-gray-400">
           <p>
             &copy; {new Date().getFullYear()} Gourisha Rathore. Designed & developed with React, Vite & Tailwind.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-5">
             <span>Gwalior, Madhya Pradesh, India</span>
             <button
               onClick={scrollToTop}

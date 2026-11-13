@@ -8,16 +8,17 @@ export default function SectionHeading({
   theme = 'light' // 'light' or 'dark'
 }) {
   const isDark = theme === 'dark';
+  const isCenter = align === 'center';
 
   return (
     <div
-      className={`mb-12 md:mb-16 ${
-        align === 'center' ? 'text-center max-w-2xl mx-auto' : 'max-w-3xl'
+      className={`mb-8 sm:mb-10 ${
+        isCenter ? 'text-center max-w-2xl mx-auto' : 'max-w-3xl'
       }`}
     >
       {/* Category / Index Tag */}
       {tag && (
-        <div className="flex items-center gap-3 mb-3">
+        <div className={`flex items-center gap-3 mb-2.5 ${isCenter ? 'justify-center' : ''}`}>
           <span
             className={`font-mono text-xs uppercase tracking-ultra font-semibold ${
               isDark ? 'text-burnt' : 'text-burnt'
@@ -26,7 +27,7 @@ export default function SectionHeading({
             {tag}
           </span>
           <div
-            className={`h-px flex-1 max-w-[40px] ${
+            className={`h-px max-w-[36px] w-full ${
               isDark ? 'bg-charcoal-50' : 'bg-ink-border'
             }`}
           />
@@ -35,7 +36,7 @@ export default function SectionHeading({
 
       {/* Main Heading */}
       <h2
-        className={`font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-[1.15] ${
+        className={`font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-[1.18] ${
           isDark ? 'text-white' : 'text-ink'
         }`}
       >
@@ -45,7 +46,7 @@ export default function SectionHeading({
       {/* Subtitle / Context description */}
       {subtitle && (
         <p
-          className={`mt-4 text-base sm:text-lg leading-relaxed ${
+          className={`mt-3 text-sm sm:text-base leading-relaxed ${
             isDark ? 'text-gray-400' : 'text-ink-muted'
           }`}
         >

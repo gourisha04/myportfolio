@@ -1,10 +1,10 @@
 import React from 'react';
 import SectionHeading from '../components/SectionHeading';
-import { Code2, Compass, GraduationCap, Laptop, Sparkles, Check } from 'lucide-react';
+import { Code2, Compass, Laptop, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 border-b border-ink-border/50">
+    <section id="about" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
           tag="02 / ABOUT ME"
@@ -12,16 +12,16 @@ export default function About() {
           subtitle="A developer focused on crafting responsive web experiences that prioritize clarity, performance, and real-world utility."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* Main Story & Paragraphs */}
-          <div className="lg:col-span-7 space-y-6 text-base sm:text-lg text-ink-muted leading-relaxed font-normal">
+          <div className="lg:col-span-7 space-y-4 sm:space-y-5 text-sm sm:text-base text-ink-muted leading-relaxed font-normal">
             <p>
-              I graduated with a Bachelor of Technology in Computer Science Engineering from <strong className="text-ink font-semibold">Madhav Institute of Technology and Science (MITS), Gwalior</strong>. My foundation in computer science gave me an appreciation for structured algorithms, clean architecture, and reliable system design.
+              I graduated with a Bachelor of Technology in Computer Science Engineering from <strong className="text-ink font-semibold">Madhav Institute of Technology and Science (MITS), Gwalior</strong>, following a Diploma in Computer Science Engineering with Distinction (8.03 CGPA) from <strong className="text-ink font-semibold">Government Women's Polytechnic College, Gwalior</strong>.
             </p>
 
             <p>
-              Over the course of my academic journey and internship at <strong className="text-ink font-semibold">Gravit Infosystem</strong>, my passion consolidated around frontend and full-stack development. I enjoy translating complex user requirements into performant interfaces that feel natural and intuitive to navigate.
+              Over the course of my academic foundation and internship at <strong className="text-ink font-semibold">Gravit Infosystem</strong>, my passion consolidated around frontend and full-stack development. I enjoy translating complex user requirements into performant interfaces that feel natural and intuitive to navigate.
             </p>
 
             <p>
@@ -33,76 +33,76 @@ export default function About() {
             </p>
 
             {/* Principles Grid */}
-            <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="p-5 rounded-xl bg-white border border-ink-border/80 shadow-sm">
-                <div className="w-8 h-8 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-3">
-                  <Laptop className="w-4 h-4" />
+            <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              <div className="p-4 rounded-xl bg-white border border-ink-border/80 shadow-sm">
+                <div className="w-7 h-7 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-2.5">
+                  <Laptop className="w-3.5 h-3.5" />
                 </div>
-                <h4 className="font-display font-bold text-base text-ink mb-1">
+                <h4 className="font-display font-bold text-sm text-ink mb-1">
                   Responsive & Accessible
                 </h4>
-                <p className="text-xs sm:text-sm text-ink-muted leading-relaxed">
+                <p className="text-xs text-ink-muted leading-relaxed">
                   Every interface is built to function flawlessly across desktop, tablet, and mobile with semantic HTML and keyboard accessibility.
                 </p>
               </div>
 
-              <div className="p-5 rounded-xl bg-white border border-ink-border/80 shadow-sm">
-                <div className="w-8 h-8 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-3">
+              <div className="p-4 rounded-xl bg-white border border-ink-border/80 shadow-sm">
+                <div className="w-7 h-7 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-2.5">
                   <Code2 className="w-4 h-4" />
                 </div>
-                <h4 className="font-display font-bold text-base text-ink mb-1">
+                <h4 className="font-display font-bold text-sm text-ink mb-1">
                   Clean Architecture
                 </h4>
-                <p className="text-xs sm:text-sm text-ink-muted leading-relaxed">
+                <p className="text-xs text-ink-muted leading-relaxed">
                   Modular component design, sensible state management, and clear separation of concerns that teams can scale easily.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Sidebar / Quick Facts & Cutout */}
-          <div className="lg:col-span-5 space-y-6">
+          {/* Sidebar / Quick Facts */}
+          <div className="lg:col-span-5 space-y-4">
             
-            {/* Cutout / Feature card */}
-            <div className="relative rounded-2xl bg-ivory-300/60 border border-ink-border p-6 overflow-hidden">
-              <div className="flex items-center gap-4 mb-5">
+            {/* Quick Specs Card */}
+            <div className="rounded-2xl bg-ivory-300/60 border border-ink-border p-5">
+              <div className="flex items-center gap-3.5 mb-4 pb-3 border-b border-ink-border/60">
                 <img
                   src="/logo.png"
                   alt="Personal Monogram"
-                  className="w-12 h-12 object-contain rounded-full bg-white p-1 border border-ink-border"
+                  className="w-10 h-10 object-contain rounded-full bg-white p-1 border border-ink-border"
                 />
                 <div>
-                  <h4 className="font-display font-bold text-lg text-ink">
+                  <h4 className="font-display font-bold text-base text-ink">
                     Gourisha Rathore
                   </h4>
                   <p className="text-xs font-mono text-burnt font-medium">
-                    Full-Stack & Frontend Engineer
+                    Frontend & MERN Stack Developer
                   </p>
                 </div>
               </div>
 
               {/* Quick Specs List */}
-              <div className="space-y-3 font-mono text-xs">
-                <div className="flex items-center justify-between py-2 border-b border-ink-border/60">
-                  <span className="text-ink-muted">Education</span>
+              <div className="space-y-2.5 font-mono text-xs">
+                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/50">
+                  <span className="text-ink-muted">Degree</span>
                   <span className="text-ink font-semibold">B.Tech CSE (2023–2026)</span>
                 </div>
-                <div className="flex items-center justify-between py-2 border-b border-ink-border/60">
-                  <span className="text-ink-muted">Academic Merit</span>
-                  <span className="text-ink font-semibold">7.65 CGPA</span>
+                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/50">
+                  <span className="text-ink-muted">Diploma</span>
+                  <span className="text-ink font-semibold">Polytechnic CSE (2020–2023)</span>
                 </div>
-                <div className="flex items-center justify-between py-2 border-b border-ink-border/60">
+                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/50">
+                  <span className="text-ink-muted">Academic Merit</span>
+                  <span className="text-ink font-semibold">7.65 CGPA / 8.03 CGPA</span>
+                </div>
+                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/50">
                   <span className="text-ink-muted">Location</span>
                   <span className="text-ink font-semibold">Gwalior, M.P., India</span>
                 </div>
-                <div className="flex items-center justify-between py-2 border-b border-ink-border/60">
-                  <span className="text-ink-muted">Focus Areas</span>
-                  <span className="text-ink font-semibold">React, Vite, Node, MERN</span>
-                </div>
-                <div className="flex items-center justify-between py-2">
+                <div className="flex items-center justify-between py-1.5">
                   <span className="text-ink-muted">Work Status</span>
                   <span className="text-emerald-700 font-semibold flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block" />
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-pulse" />
                     Open to Job Offers
                   </span>
                 </div>
@@ -110,12 +110,12 @@ export default function About() {
             </div>
 
             {/* Professional Mindset Card */}
-            <div className="p-6 rounded-2xl bg-charcoal text-ivory-100 border border-charcoal-50 shadow-md">
+            <div className="p-5 rounded-2xl bg-charcoal text-ivory-100 border border-charcoal-50 shadow-sm">
               <div className="flex items-center gap-2 text-burnt text-xs font-mono uppercase tracking-widest font-semibold mb-2">
                 <Compass className="w-3.5 h-3.5" />
                 <span>Professional Objective</span>
               </div>
-              <p className="text-sm text-gray-300 leading-relaxed font-normal">
+              <p className="text-xs sm:text-sm text-gray-300 leading-relaxed font-normal">
                 "Seeking opportunities with engineering teams where I can contribute to high-impact user experiences, write clean production code, and grow under experienced engineering mentorship."
               </p>
             </div>
