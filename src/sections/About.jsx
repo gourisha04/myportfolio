@@ -67,9 +67,9 @@ export default function About() {
             <div className="rounded-2xl bg-ivory-300/60 border border-ink-border p-5">
               <div className="flex items-center gap-3.5 mb-4 pb-3 border-b border-ink-border/60">
                 <img
-                  src="/logo.png"
-                  alt="Personal Monogram"
-                  className="w-10 h-10 object-contain rounded-full bg-white p-1 border border-ink-border"
+                  src="/profile.jpg"
+                  alt="Gourisha Rathore"
+                  className="w-12 h-12 object-cover object-top rounded-full border-2 border-burnt/30 shadow-sm"
                 />
                 <div>
                   <h4 className="font-display font-bold text-base text-ink">
