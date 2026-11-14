@@ -81,14 +81,17 @@ export default function Contact() {
 
     try {
       if (isEmailJSConfigured) {
-        // Send via EmailJS
+        // Send via EmailJS with comprehensive template parameter mapping
         const templateParams = {
-          from_name: formData.name,
-          from_email: formData.email,
-          reply_to: formData.email,
-          subject: formData.subject || `New enquiry from ${formData.name}`,
-          message: formData.message,
-          to_email: 'gourisharathore@gmail.com'
+          from_name: formData.name.trim(),
+          name: formData.name.trim(),
+          from_email: formData.email.trim(),
+          email: formData.email.trim(),
+          reply_to: formData.email.trim(),
+          subject: formData.subject.trim() || `Portfolio Contact from ${formData.name.trim()}`,
+          message: formData.message.trim(),
+          to_email: 'gourisharathore@gmail.com',
+          to_name: 'Gourisha Rathore'
         };
 
         await emailjs.send(serviceId, templateId, templateParams, publicKey);
@@ -293,6 +296,7 @@ export default function Contact() {
                     <input
                       type="text"
                       required
+                      disabled={status === 'submitting'}
                       value={formData.name}
                       onChange={(e) => {
                         setFormData({ ...formData, name: e.target.value });
@@ -301,7 +305,7 @@ export default function Contact() {
                       placeholder="e.g. Alex Morgan"
                       className={`w-full px-3.5 py-2.5 rounded-lg border ${
                         errors.name ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors`}
+                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
                     />
                     {errors.name && (
                       <p className="text-[11px] font-mono text-red-600 mt-1">{errors.name}</p>
@@ -315,6 +319,7 @@ export default function Contact() {
                     <input
                       type="email"
                       required
+                      disabled={status === 'submitting'}
                       value={formData.email}
                       onChange={(e) => {
                         setFormData({ ...formData, email: e.target.value });
@@ -323,7 +328,7 @@ export default function Contact() {
                       placeholder="alex@company.com"
                       className={`w-full px-3.5 py-2.5 rounded-lg border ${
                         errors.email ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors`}
+                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
                     />
                     {errors.email && (
                       <p className="text-[11px] font-mono text-red-600 mt-1">{errors.email}</p>
@@ -337,10 +342,11 @@ export default function Contact() {
                   </label>
                   <input
                     type="text"
+                    disabled={status === 'submitting'}
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     placeholder="Opportunity / Full-Stack Role / Inquiry"
-                    className="w-full px-3.5 py-2.5 rounded-lg border border-ink-border bg-ivory-50 text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors"
+                    className="w-full px-3.5 py-2.5 rounded-lg border border-ink-border bg-ivory-50 text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   />
                 </div>
 
@@ -350,6 +356,7 @@ export default function Contact() {
                   </label>
                   <textarea
                     required
+                    disabled={status === 'submitting'}
                     rows={4}
                     value={formData.message}
                     onChange={(e) => {
@@ -359,7 +366,7 @@ export default function Contact() {
                     placeholder="Write your note, job requirements, or project details..."
                     className={`w-full px-3.5 py-2.5 rounded-lg border ${
                       errors.message ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                    } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors resize-y`}
+                    } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors resize-y disabled:opacity-60 disabled:cursor-not-allowed`}
                   />
                   {errors.message && (
                     <p className="text-[11px] font-mono text-red-600 mt-1">{errors.message}</p>
