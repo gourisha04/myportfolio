@@ -80,38 +80,8 @@ export default function Contact() {
       formspreeEndpoint && !formspreeEndpoint.includes('your_form_id');
 
     try {
-      // 1. Try secure serverless API route first (keeps EmailJS keys private without VITE_ prefix on Vercel)
-      try {
-        const apiResponse = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-
-        if (apiResponse.ok) {
-          setStatus('success');
-          setFeedbackMessage('Thank you! Your message has been sent successfully. I will get back to you shortly.');
-          setFormData({ name: '', email: '', subject: '', message: '' });
-          return;
-        }
-
-        // If the server explicitly returned an error (other than 404), throw it to catch
-        if (apiResponse.status !== 404) {
-          const errData = await apiResponse.json().catch(() => ({}));
-          throw new Error(errData.error || 'Server submission failed');
-        }
-      } catch (apiErr) {
-        // If not a 404 fallback situation, and it was a real API error, don't silently swallow
-        if (apiErr.message !== 'Failed to fetch' && !apiErr.message.includes('404')) {
-          console.warn('Server API error, attempting direct client fallback:', apiErr);
-        }
-      }
-
-      // 2. Direct client-side EmailJS fallback (e.g. local dev with Vite where /api is not hosted)
+      // 1. If client-side EmailJS is configured (VITE_ keys present), use it directly
       if (isEmailJSConfigured) {
-        // Send via EmailJS with comprehensive template parameter mapping
         const templateParams = {
           from_name: formData.name.trim(),
           name: formData.name.trim(),
@@ -129,8 +99,27 @@ export default function Contact() {
         setStatus('success');
         setFeedbackMessage('Thank you! Your message has been sent successfully. I will get back to you shortly.');
         setFormData({ name: '', email: '', subject: '', message: '' });
-      } else if (isFormspreeConfigured) {
-        // Send via Formspree
+        return;
+      }
+
+      // 2. Otherwise try the serverless API route (/api/contact) for non-VITE_ server environment variables
+      const apiResponse = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (apiResponse.ok) {
+        setStatus('success');
+        setFeedbackMessage('Thank you! Your message has been sent successfully. I will get back to you shortly.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        return;
+      }
+
+      // If formspree is configured as alternative
+      if (isFormspreeConfigured) {
         const response = await fetch(formspreeEndpoint, {
           method: 'POST',
           headers: {
@@ -144,21 +133,17 @@ export default function Contact() {
           setStatus('success');
           setFeedbackMessage('Thank you! Your message has been sent successfully. I will get back to you shortly.');
           setFormData({ name: '', email: '', subject: '', message: '' });
-        } else {
-          throw new Error('Formspree submission failed');
+          return;
         }
-      } else {
-        // Fallback when environment variables are not yet populated
-        setStatus('unconfigured');
-        setFeedbackMessage(
-          'Email service credentials are not yet configured in .env. Click below to open your email client directly with your message pre-filled.'
-        );
       }
+
+      const errData = await apiResponse.json().catch(() => ({}));
+      throw new Error(errData.error || 'Submission could not be completed.');
     } catch (error) {
       console.error('Contact Form Submission Error:', error);
       setStatus('error');
       setFeedbackMessage(
-        'Submission encountered an issue. You can click below to send your note directly via your email client to gourisharathore@gmail.com.'
+        error.message || 'Submission encountered an issue. You can click below to send your note directly via your email client to gourisharathore@gmail.com.'
       );
     }
   };
