@@ -62,13 +62,13 @@ export default function Navbar() {
           </div>
         </a>
 
-        {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8 text-xs sm:text-sm font-medium text-ink">
+        {/* Desktop Navigation Links — Uniform Spacing & Alignment */}
+        <nav className="hidden md:flex items-center gap-1 lg:gap-2 text-xs sm:text-sm font-medium text-ink">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-ink/80 hover:text-burnt hover-link-underline transition-colors tracking-wide"
+              className="px-3 py-1.5 rounded-md text-ink/80 hover:text-burnt hover:bg-ivory-300/40 transition-colors tracking-wide"
             >
               {link.name}
             </a>
@@ -102,11 +102,11 @@ export default function Navbar() {
       {/* Mobile Menu Dropdown Drawer */}
       {mobileMenuOpen && (
         <div className="md:hidden fixed inset-x-0 top-[57px] bottom-0 bg-ivory/98 backdrop-blur-xl border-b border-ink-border px-6 py-6 shadow-2xl flex flex-col justify-between overflow-y-auto">
-          <nav className="flex flex-col gap-4 text-base font-medium">
+          <nav className="flex flex-col gap-1 text-base font-medium">
             <a
               href="#home"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-ink hover:text-burnt py-1 font-display text-lg"
+              className="text-ink hover:text-burnt px-3 py-2 rounded-lg hover:bg-ivory-200/60 font-display text-lg transition-colors"
             >
               Home
             </a>
@@ -115,7 +115,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-ink/80 hover:text-burnt py-1 text-base tracking-wide"
+                className="text-ink/80 hover:text-burnt px-3 py-2 rounded-lg hover:bg-ivory-200/60 transition-colors text-base tracking-wide"
               >
                 {link.name}
               </a>

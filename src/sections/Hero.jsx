@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-24 pb-6 sm:pt-28 sm:pb-8 lg:pt-32 lg:pb-10 border-b border-ink-border/50 overflow-hidden"
+      className="relative pt-20 pb-4 sm:pt-24 sm:pb-5 lg:pt-28 lg:pb-6 border-b border-ink-border/50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -153,8 +153,8 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Decorative Corner Element */}
-              <div className="absolute -bottom-3 -left-3 bg-charcoal text-ivory-100 px-3 py-1.5 rounded-lg text-xs font-mono shadow-md border border-charcoal-50 hidden sm:flex items-center gap-1.5">
+              {/* Decorative Corner Element — Positioned at top-right to avoid any text overlap */}
+              <div className="absolute -top-3 -right-3 z-10 bg-charcoal text-ivory-100 px-3 py-1.5 rounded-lg text-xs font-mono shadow-md border border-charcoal-50 flex items-center gap-1.5 pointer-events-none">
                 <Sparkles className="w-3 h-3 text-burnt" />
                 <span>React • Vite • Node.js</span>
               </div>
@@ -162,6 +162,18 @@ export default function Hero() {
           </div>
         </div>
 
+        {/* Scroll Indicator — Snug & Naturally Positioned */}
+        <div className="mt-4 pt-3 border-t border-ink-border/40 flex items-center justify-between text-xs font-mono text-ink-muted">
+          <a
+            href="#about"
+            className="inline-flex items-center gap-2 hover:text-burnt transition-colors group"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-burnt animate-pulse" />
+            <span className="group-hover:translate-x-0.5 transition-transform">Scroll to Explore</span>
+            <ArrowDown className="w-3 h-3 text-burnt opacity-70 group-hover:translate-y-0.5 transition-transform" />
+          </a>
+          <span className="hidden sm:inline text-ink-muted text-[11px]">Frontend & MERN Developer</span>
+        </div>
       </div>
     </section>
   );

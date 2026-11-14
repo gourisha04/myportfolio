@@ -8,9 +8,9 @@ export const projects = [
     featured: true,
     period: "2024 — 2025",
     overview:
-      "A complete full-stack web platform and administration system built for Geet Studio, a premier dance, music, fitness, and event production studio based in Indore. The platform unites a cinematic public brand experience with a direct student enrollment engine, community vendor directory, and operations CMS.",
+      "A production full-stack web platform and administration portal developed for Geet Studio in Indore. The application provides an interactive public brand experience across four creative verticals alongside class enrollment workflows, a community artist directory, and an operations management dashboard.",
     contribution:
-      "Developed the responsive React frontend with fluid motion design, designed MongoDB collections with Mongoose, built the Express REST API, and created a custom analytics engine with Excel reporting.",
+      "Engineered the full-stack architecture: built responsive React components with Tailwind CSS and Framer Motion, implemented Express.js REST API endpoints with Mongoose schemas across 9 collections, integrated role-based authentication, and created a custom analytics logger with Excel export.",
     stack: [
       "React",
       "Tailwind CSS",
@@ -44,9 +44,9 @@ export const projects = [
     featured: true,
     period: "2025",
     overview:
-      "A full-stack AI wedding planning platform that generates complete cinematic production roadmaps for Indian weddings. Users register, create a wedding project with ceremony details and budget, and receive a Gemini-powered plan covering function-wise video shot lists, album layout designs, highlight film structures, reel concepts, and production notes — all in a single output dashboard.",
+      "A full-stack MERN application that generates ceremony-specific production roadmaps for Indian weddings using generative AI. It allows couples and event planners to create multi-event schedules, specify budgets and deliverables, and receive structured production plans across dedicated dashboard views.",
     contribution:
-      "Built the complete MERN stack architecture: developed the React frontend with Framer Motion animations and a multi-page dashboard, designed the Express REST API with JWT authentication and role-based middleware, created MongoDB schemas for weddings, events, album designs, and video plans, and integrated the Google Gemini API for structured AI plan generation with a structured mock fallback.",
+      "Designed and developed the full system: constructed modular React interfaces with Framer Motion transitions, implemented Express.js routes with JWT authentication and role-based middleware, modeled Mongoose schemas for multi-day events and media references, and integrated the Google Gemini API with fallback handling to reliably produce structured JSON production guides.",
     stack: [
       "React",
       "Tailwind CSS",

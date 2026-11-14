@@ -5,7 +5,7 @@ import { Briefcase, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50 bg-ivory-100/50">
+    <section id="experience" className="py-10 sm:py-12 lg:py-14 border-b border-ink-border/50 bg-ivory-100/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
           tag="Experience"

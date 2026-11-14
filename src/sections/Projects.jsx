@@ -7,7 +7,7 @@ export default function Projects() {
   const displayProjects = projects.filter((p) => p.featured);
 
   return (
-    <section id="projects" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
+    <section id="projects" className="py-10 sm:py-12 lg:py-14 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Section Header */}

@@ -4,7 +4,7 @@ import { Code2, Compass, Laptop, Sparkles } from 'lucide-react';
 
 export default function About() {
   return (
-    <section id="about" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50">
+    <section id="about" className="py-10 sm:py-12 lg:py-14 border-b border-ink-border/50">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         <SectionHeading
           tag="About Me"
