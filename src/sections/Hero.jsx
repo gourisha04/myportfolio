@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-24 pb-8 sm:pt-28 sm:pb-10 lg:pt-32 lg:pb-12 border-b border-ink-border/50 overflow-hidden"
+      className="relative pt-24 pb-4 sm:pt-28 sm:pb-6 lg:pt-32 lg:pb-8 border-b border-ink-border/50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -163,7 +163,7 @@ export default function Hero() {
         </div>
 
         {/* Scroll Indicator — Snug & Naturally Positioned */}
-        <div className="mt-8 sm:mt-10 flex items-center justify-between text-xs font-mono text-ink-muted border-t border-ink-border/40 pt-3">
+        <div className="mt-5 sm:mt-7 flex items-center justify-between text-xs font-mono text-ink-muted border-t border-ink-border/40 pt-3">
           <div className="flex items-center gap-2">
             <span className="w-1.5 h-1.5 rounded-full bg-burnt animate-pulse" />
             <span>Scroll to explore</span>
