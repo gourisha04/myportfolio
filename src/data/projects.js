@@ -36,37 +36,43 @@ export const projects = [
     accentColor: "#E87545"
   },
   {
-    id: "smart-event-booking",
-    title: "Smart Event Booking",
-    subtitle: "Event Discovery & Dynamic Ticketing Platform",
-    category: "Full-Stack Web Application",
+    id: "parinay-ai-wedding-planner",
+    title: "Parinay",
+    subtitle: "AI-Powered Wedding Planning & Production System",
+    category: "Full-Stack MERN Application",
     isClient: false,
     featured: true,
-    period: "2024",
+    period: "2025",
     overview:
-      "An end-to-end event discovery and ticket reservation system that allows users to explore upcoming conferences, workshops, and concerts, calculate seat pricing dynamically, and book tickets through a clean, intuitive booking flow backed by MySQL.",
+      "A full-stack AI wedding planning platform that generates complete cinematic production roadmaps for Indian weddings. Users register, create a wedding project with ceremony details and budget, and receive a Gemini-powered plan covering function-wise video shot lists, album layout designs, highlight film structures, reel concepts, and production notes — all in a single output dashboard.",
     contribution:
-      "Architected both frontend and backend services: built modular React views with live ticket total computation, implemented MySQL database schemas for events and bookings, and designed an administrative control panel for event scheduling.",
+      "Built the complete MERN stack architecture: developed the React frontend with Framer Motion animations and a multi-page dashboard, designed the Express REST API with JWT authentication and role-based middleware, created MongoDB schemas for weddings, events, album designs, and video plans, and integrated the Google Gemini API for structured AI plan generation with a structured mock fallback.",
     stack: [
       "React",
-      "Vite",
       "Tailwind CSS",
+      "Framer Motion",
+      "React Router",
+      "React Hook Form",
       "Node.js",
       "Express.js",
-      "MySQL",
-      "Socket.IO",
-      "Framer Motion"
+      "MongoDB",
+      "Mongoose",
+      "Google Gemini API",
+      "JWT Auth",
+      "Multer",
+      "Vite"
     ],
     highlights: [
-      "Categorized event exploration with instant search and filtering by date, category, and pricing.",
-      "Dynamic event detail pages with venue map embeds, schedule timeline, and available seat quotas.",
-      "Interactive checkout flow with live price updates and instant booking confirmation.",
-      "Administrative dashboard allowing organizers to add, update, and manage event listings and view attendee rosters.",
-      "Relational MySQL schema ensuring seat availability constraints and booking audit records."
+      "Google Gemini AI generates structured JSON wedding production plans: function-wise video plans, shot lists, album layouts, highlight film structures, and reel concepts.",
+      "Per-function cinematic plans: photo checklist, video checklist, camera angles, drone shots, music mood, color grading style, editing pace, and social media reel ideas.",
+      "Wedding album design output: cover design, page-by-page layout configurations (Full Bleed, Grid, Collage, Portrait Focus, Panoramic), colour palette, and typography.",
+      "JWT-based authentication with role-based middleware (user/admin), protected dashboard routes, and secure session handling.",
+      "Media upload system using Multer for uploading reference files per wedding function, stored and linked to AI-generated plans.",
+      "Tabbed AI output dashboard: Function-Wise Plans, Shot Checklists, Album Layout, Highlight Structure, and Production Notes — all from a single AI call."
     ],
-    liveUrl: null,
-    githubUrl: "https://github.com/gourisha04",
-    image: null,
+    liveUrl: "https://ai-wedding-planner-eosin.vercel.app/",
+    githubUrl: "https://github.com/gourisha04/AI-Wedding-Planner",
+    image: "/parinay-preview.png",
     accentColor: "#C96538"
   }
 ];
