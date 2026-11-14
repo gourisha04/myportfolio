@@ -142,7 +142,7 @@ export default function About() {
             {/* Action Buttons: Resume & Contact */}
             <div className="pt-2 flex flex-wrap items-center gap-3 w-full sm:w-auto">
               <a
-                href="/resume.pdf"
+                href="/Gourisha_Rathore_Resume.pdf"
                 download="Gourisha_Rathore_Resume.pdf"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-all duration-200 shadow-md hover:shadow-glow-accent hover:-translate-y-0.5"
               >

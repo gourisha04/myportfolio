@@ -68,7 +68,7 @@ export default function Resume() {
               {/* Action Buttons */}
               <div className="pt-2 flex flex-wrap items-center gap-3">
                 <a
-                  href="/resume.pdf"
+                  href="/Gourisha_Rathore_Resume.pdf"
                   download="Gourisha_Rathore_Resume.pdf"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-mono font-medium bg-burnt text-white hover:bg-burnt-hover transition-all duration-200 shadow-sm hover:shadow hover:-translate-y-0.5"
                 >
@@ -77,7 +77,7 @@ export default function Resume() {
                 </a>
 
                 <a
-                  href="/resume.pdf"
+                  href="/Gourisha_Rathore_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-mono font-medium border border-ink/20 text-ink bg-ivory-100 hover:bg-white hover:border-burnt hover:text-burnt transition-all duration-200"

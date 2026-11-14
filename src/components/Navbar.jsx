@@ -106,7 +106,7 @@ export default function Navbar() {
           {/* Right CTA: Resume Button (Desktop) */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="/resume.pdf"
+              href="/Gourisha_Rathore_Resume.pdf"
               download="Gourisha_Rathore_Resume.pdf"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-medium tracking-wide border border-[#7189E8] text-[#7189E8] bg-[#F8FAFD] hover:bg-[#7189E8] hover:text-white transition-all duration-200 shadow-xs"
             >
@@ -200,7 +200,7 @@ export default function Navbar() {
         {/* Drawer Footer: Resume & Social Links */}
         <div className="pt-4 border-t border-[#A8B8F2]/25 space-y-3">
           <a
-            href="/resume.pdf"
+            href="/Gourisha_Rathore_Resume.pdf"
             download="Gourisha_Rathore_Resume.pdf"
             onClick={() => setMobileMenuOpen(false)}
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-colors shadow-sm"
