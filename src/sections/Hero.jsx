@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
+import HeroBackground3D from '../components/HeroBackground3D';
 
 export default function Hero() {
   return (
@@ -7,7 +8,10 @@ export default function Hero() {
       id="home"
       className="relative pt-20 pb-4 sm:pt-24 sm:pb-5 lg:pt-28 lg:pb-6 border-b border-ink-border/50 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
+      {/* 3D Flowing Waves & Floating Geometric Elements matching reference */}
+      <HeroBackground3D />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Main Editorial Text Column */}
