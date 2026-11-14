@@ -128,7 +128,7 @@ export default function Hero() {
                   <img
                     src="/profile.jpg"
                     alt="Gourisha Rathore"
-                    className="w-full h-full object-cover object-center filter contrast-[1.02] hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top filter contrast-[1.02] hover:scale-105 transition-transform duration-500"
                     loading="eager"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent pointer-events-none" />
