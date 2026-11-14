@@ -4,10 +4,8 @@ export default function SectionHeading({
   tag,
   title,
   subtitle,
-  align = 'left',
-  theme = 'light' // 'light' or 'dark'
+  align = 'left'
 }) {
-  const isDark = theme === 'dark';
   const isCenter = align === 'center';
 
   return (
@@ -19,37 +17,21 @@ export default function SectionHeading({
       {/* Category / Index Tag */}
       {tag && (
         <div className={`flex items-center gap-3 mb-2.5 ${isCenter ? 'justify-center' : ''}`}>
-          <span
-            className={`font-mono text-xs uppercase tracking-ultra font-semibold ${
-              isDark ? 'text-burnt' : 'text-burnt'
-            }`}
-          >
+          <span className="font-mono text-xs uppercase tracking-ultra font-semibold text-[#7189E8]">
             {tag}
           </span>
-          <div
-            className={`h-px max-w-[36px] w-full ${
-              isDark ? 'bg-charcoal-50' : 'bg-ink-border'
-            }`}
-          />
+          <div className="h-px max-w-[36px] w-full bg-[#7189E8]/35" />
         </div>
       )}
 
       {/* Main Heading */}
-      <h2
-        className={`font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-[1.18] ${
-          isDark ? 'text-white' : 'text-ink'
-        }`}
-      >
+      <h2 className="font-display font-extrabold text-2xl sm:text-3xl lg:text-4xl tracking-tight leading-[1.18] text-[#24334D]">
         {title}
       </h2>
 
       {/* Subtitle / Context description */}
       {subtitle && (
-        <p
-          className={`mt-3 text-sm sm:text-base leading-relaxed ${
-            isDark ? 'text-gray-400' : 'text-ink-muted'
-          }`}
-        >
+        <p className="mt-3 text-sm sm:text-base leading-relaxed text-[#687891]">
           {subtitle}
         </p>
       )}

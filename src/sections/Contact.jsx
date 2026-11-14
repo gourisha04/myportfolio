@@ -149,8 +149,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-14 sm:py-16 lg:py-20 bg-ivory-100/60 border-t border-ink-border/50">
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+    <section id="contact" className="py-14 sm:py-16 lg:py-20 bg-[#EAF0F8] border-t border-[#A8B8F2]/30">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <SectionHeading
           tag="Contact"
           title="Let's build something exceptional together."
@@ -162,10 +162,10 @@ export default function Contact() {
           {/* Contact Details & Direct Channels */}
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-2">
-              <h3 className="font-display font-extrabold text-xl sm:text-2xl text-ink">
+              <h3 className="font-display font-extrabold text-xl sm:text-2xl text-[#24334D]">
                 Reach Out Directly
               </h3>
-              <p className="text-xs sm:text-sm text-ink-muted leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#687891] leading-relaxed">
                 Whether you have an opening for a Frontend / MERN Stack Developer, want to discuss a project, or just want to connect—my inbox is always open.
               </p>
             </div>
@@ -174,49 +174,49 @@ export default function Contact() {
             <div className="space-y-3">
               <a
                 href="mailto:gourisharathore@gmail.com"
-                className="group p-3.5 rounded-xl bg-white border border-ink-border flex items-center gap-3.5 hover:border-burnt transition-colors shadow-sm"
+                className="group p-3.5 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/35 flex items-center gap-3.5 hover:border-[#7189E8]/60 transition-colors shadow-sm"
               >
-                <div className="w-9 h-9 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center shrink-0 group-hover:bg-burnt group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0 group-hover:bg-[#7189E8] group-hover:text-white transition-colors">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="block text-[11px] font-mono text-ink-muted uppercase tracking-wider">
+                  <span className="block text-[11px] font-mono text-[#687891] uppercase tracking-wider">
                     Email Address
                   </span>
-                  <span className="block text-xs sm:text-sm font-semibold text-ink truncate group-hover:text-burnt transition-colors">
+                  <span className="block text-xs sm:text-sm font-semibold text-[#24334D] truncate group-hover:text-[#7189E8] transition-colors">
                     gourisharathore@gmail.com
                   </span>
                 </div>
-                <ArrowUpRight className="w-3.5 h-3.5 text-ink-muted group-hover:text-burnt group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#687891] group-hover:text-[#7189E8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
 
               <a
                 href="tel:+919893920815"
-                className="group p-3.5 rounded-xl bg-white border border-ink-border flex items-center gap-3.5 hover:border-burnt transition-colors shadow-sm"
+                className="group p-3.5 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/35 flex items-center gap-3.5 hover:border-[#7189E8]/60 transition-colors shadow-sm"
               >
-                <div className="w-9 h-9 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center shrink-0 group-hover:bg-burnt group-hover:text-white transition-colors">
+                <div className="w-9 h-9 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0 group-hover:bg-[#7189E8] group-hover:text-white transition-colors">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <span className="block text-[11px] font-mono text-ink-muted uppercase tracking-wider">
+                  <span className="block text-[11px] font-mono text-[#687891] uppercase tracking-wider">
                     Phone & WhatsApp
                   </span>
-                  <span className="block text-xs sm:text-sm font-semibold text-ink truncate group-hover:text-burnt transition-colors">
+                  <span className="block text-xs sm:text-sm font-semibold text-[#24334D] truncate group-hover:text-[#7189E8] transition-colors">
                     +91 9893920815
                   </span>
                 </div>
-                <ArrowUpRight className="w-3.5 h-3.5 text-ink-muted group-hover:text-burnt group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#687891] group-hover:text-[#7189E8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
               </a>
 
-              <div className="p-3.5 rounded-xl bg-white border border-ink-border flex items-center gap-3.5 shadow-sm">
-                <div className="w-9 h-9 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center shrink-0">
+              <div className="p-3.5 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/35 flex items-center gap-3.5 shadow-sm">
+                <div className="w-9 h-9 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="block text-[11px] font-mono text-ink-muted uppercase tracking-wider">
+                  <span className="block text-[11px] font-mono text-[#687891] uppercase tracking-wider">
                     Current Location
                   </span>
-                  <span className="block text-xs sm:text-sm font-semibold text-ink">
+                  <span className="block text-xs sm:text-sm font-semibold text-[#24334D]">
                     Gwalior, Madhya Pradesh, India
                   </span>
                 </div>
@@ -225,7 +225,7 @@ export default function Contact() {
 
             {/* Social Links Strip */}
             <div className="pt-1">
-              <span className="block text-[11px] font-mono uppercase tracking-wider text-ink font-semibold mb-2.5">
+              <span className="block text-[11px] font-mono uppercase tracking-wider text-[#24334D] font-semibold mb-2.5">
                 Professional Networks:
               </span>
               <div className="flex flex-wrap items-center gap-2.5">
@@ -233,18 +233,18 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/gourisha-rathore-b80826294"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono bg-white border border-ink-border text-ink hover:border-burnt hover:text-burnt transition-colors shadow-sm"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono bg-[#F8FAFD] border border-[#A8B8F2]/35 text-[#24334D] hover:border-[#7189E8] hover:text-[#7189E8] transition-colors shadow-sm"
                 >
-                  <Linkedin className="w-3.5 h-3.5 text-burnt" />
+                  <Linkedin className="w-3.5 h-3.5 text-[#7189E8]" />
                   <span>LinkedIn Profile</span>
                 </a>
                 <a
                   href="https://github.com/gourisha04"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono bg-white border border-ink-border text-ink hover:border-burnt hover:text-burnt transition-colors shadow-sm"
+                  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono bg-[#F8FAFD] border border-[#A8B8F2]/35 text-[#24334D] hover:border-[#7189E8] hover:text-[#7189E8] transition-colors shadow-sm"
                 >
-                  <Github className="w-3.5 h-3.5 text-burnt" />
+                  <Github className="w-3.5 h-3.5 text-[#7189E8]" />
                   <span>GitHub Profile</span>
                 </a>
               </div>
@@ -253,18 +253,18 @@ export default function Contact() {
 
           {/* Contact Form Column */}
           <div className="lg:col-span-7">
-            <div className="bg-white border border-ink-border rounded-2xl p-5 sm:p-7 shadow-editorial">
-              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-ink-border/70">
-                <MessageSquare className="w-4 h-4 text-burnt" />
-                <h4 className="font-display font-bold text-lg text-ink">
+            <div className="bg-[#F8FAFD] border border-[#A8B8F2]/35 rounded-2xl p-4 sm:p-7 shadow-md">
+              <div className="flex items-center gap-2 mb-4 pb-3 border-b border-[#A8B8F2]/25">
+                <MessageSquare className="w-4 h-4 text-[#7189E8]" />
+                <h4 className="font-display font-bold text-base sm:text-lg text-[#24334D]">
                   Send a Direct Message
                 </h4>
               </div>
 
               {/* Success Notification */}
               {status === 'success' && (
-                <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-900 space-y-2 mb-5">
-                  <div className="flex items-center gap-2 font-display font-bold text-sm">
+                <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-400 text-emerald-900 space-y-2 mb-5">
+                  <div className="flex items-center gap-2 font-display font-bold text-sm text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                     <span>Message Delivered!</span>
                   </div>
@@ -273,7 +273,7 @@ export default function Contact() {
                   </p>
                   <button
                     onClick={() => setStatus('idle')}
-                    className="text-xs font-mono font-semibold text-emerald-900 underline pt-1"
+                    className="text-xs font-mono font-semibold text-emerald-800 underline pt-1"
                   >
                     Send another note
                   </button>
@@ -282,8 +282,8 @@ export default function Contact() {
 
               {/* Error or Unconfigured Notification */}
               {(status === 'error' || status === 'unconfigured') && (
-                <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 space-y-2 mb-5">
-                  <div className="flex items-center gap-2 font-display font-bold text-sm">
+                <div className="p-4 rounded-xl bg-amber-50 border border-amber-400 text-amber-900 space-y-2 mb-5">
+                  <div className="flex items-center gap-2 font-display font-bold text-sm text-amber-800">
                     <AlertCircle className="w-4 h-4 text-amber-600" />
                     <span>Notice</span>
                   </div>
@@ -293,7 +293,7 @@ export default function Contact() {
                   <button
                     type="button"
                     onClick={handleDirectMailto}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-medium bg-burnt text-white hover:bg-burnt-hover transition-colors shadow-sm mt-1"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-colors shadow-sm mt-1"
                   >
                     <Mail className="w-3.5 h-3.5" />
                     <span>Send via Email Client (Pre-filled)</span>
@@ -305,7 +305,7 @@ export default function Contact() {
               <form onSubmit={handleSubmit} noValidate className="space-y-3.5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                   <div>
-                    <label className="block text-[11px] font-mono uppercase tracking-wider text-ink font-semibold mb-1">
+                    <label className="block text-[11px] font-mono uppercase tracking-wider text-[#687891] font-semibold mb-1">
                       Your Name *
                     </label>
                     <input
@@ -319,16 +319,16 @@ export default function Contact() {
                       }}
                       placeholder="e.g. Alex Morgan"
                       className={`w-full px-3.5 py-2.5 rounded-lg border ${
-                        errors.name ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
+                        errors.name ? 'border-red-500 bg-red-50' : 'border-[#A8B8F2]/40 bg-white'
+                      } text-[#24334D] placeholder-[#687891]/50 text-base sm:text-sm focus:outline-none focus:border-[#7189E8] focus:bg-[#F8FAFD] transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
                     />
                     {errors.name && (
-                      <p className="text-[11px] font-mono text-red-600 mt-1">{errors.name}</p>
+                      <p className="text-[11px] font-mono text-red-500 mt-1">{errors.name}</p>
                     )}
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-mono uppercase tracking-wider text-ink font-semibold mb-1">
+                    <label className="block text-[11px] font-mono uppercase tracking-wider text-[#687891] font-semibold mb-1">
                       Your Email *
                     </label>
                     <input
@@ -342,17 +342,17 @@ export default function Contact() {
                       }}
                       placeholder="alex@company.com"
                       className={`w-full px-3.5 py-2.5 rounded-lg border ${
-                        errors.email ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                      } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
+                        errors.email ? 'border-red-500 bg-red-50' : 'border-[#A8B8F2]/40 bg-white'
+                      } text-[#24334D] placeholder-[#687891]/50 text-base sm:text-sm focus:outline-none focus:border-[#7189E8] focus:bg-[#F8FAFD] transition-colors disabled:opacity-60 disabled:cursor-not-allowed`}
                     />
                     {errors.email && (
-                      <p className="text-[11px] font-mono text-red-600 mt-1">{errors.email}</p>
+                      <p className="text-[11px] font-mono text-red-500 mt-1">{errors.email}</p>
                     )}
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-mono uppercase tracking-wider text-ink font-semibold mb-1">
+                  <label className="block text-[11px] font-mono uppercase tracking-wider text-[#687891] font-semibold mb-1">
                     Subject
                   </label>
                   <input
@@ -361,12 +361,12 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     placeholder="Opportunity / Full-Stack Role / Inquiry"
-                    className="w-full px-3.5 py-2.5 rounded-lg border border-ink-border bg-ivory-50 text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+                    className="w-full px-3.5 py-2.5 rounded-lg border border-[#A8B8F2]/40 bg-white text-[#24334D] placeholder-[#687891]/50 text-base sm:text-sm focus:outline-none focus:border-[#7189E8] focus:bg-[#F8FAFD] transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-mono uppercase tracking-wider text-ink font-semibold mb-1">
+                  <label className="block text-[11px] font-mono uppercase tracking-wider text-[#687891] font-semibold mb-1">
                     Message *
                   </label>
                   <textarea
@@ -380,11 +380,11 @@ export default function Contact() {
                     }}
                     placeholder="Write your note, job requirements, or project details..."
                     className={`w-full px-3.5 py-2.5 rounded-lg border ${
-                      errors.message ? 'border-red-500 bg-red-50/30' : 'border-ink-border bg-ivory-50'
-                    } text-ink text-xs sm:text-sm focus:outline-none focus:border-burnt focus:bg-white transition-colors resize-y disabled:opacity-60 disabled:cursor-not-allowed`}
+                      errors.message ? 'border-red-500 bg-red-50' : 'border-[#A8B8F2]/40 bg-white'
+                    } text-[#24334D] placeholder-[#687891]/50 text-base sm:text-sm focus:outline-none focus:border-[#7189E8] focus:bg-[#F8FAFD] transition-colors resize-y disabled:opacity-60 disabled:cursor-not-allowed`}
                   />
                   {errors.message && (
-                    <p className="text-[11px] font-mono text-red-600 mt-1">{errors.message}</p>
+                    <p className="text-[11px] font-mono text-red-500 mt-1">{errors.message}</p>
                   )}
                 </div>
 
@@ -393,7 +393,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === 'submitting'}
-                    className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full text-xs sm:text-sm font-mono font-medium bg-burnt text-white hover:bg-burnt-hover transition-all duration-200 shadow-sm hover:shadow hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 sm:py-2.5 rounded-full text-xs sm:text-sm font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-all duration-200 shadow-sm hover:shadow-glow-subtle hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
                   >
                     {status === 'submitting' ? (
                       <>
@@ -411,7 +411,7 @@ export default function Contact() {
                   <button
                     type="button"
                     onClick={handleDirectMailto}
-                    className="text-[11px] font-mono text-ink-muted hover:text-burnt transition-colors text-left sm:text-right"
+                    className="text-[11px] font-mono text-[#687891] hover:text-[#7189E8] transition-colors text-left sm:text-right"
                   >
                     Or send via default email client →
                   </button>

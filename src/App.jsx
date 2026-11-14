@@ -12,7 +12,7 @@ import Contact from './sections/Contact';
 
 export default function App() {
   return (
-    <div className="relative min-h-screen bg-ivory text-ink selection:bg-burnt selection:text-white">
+    <div className="relative min-h-screen bg-[#EAF0F8] text-[#24334D] selection:bg-[#7189E8] selection:text-white">
       {/* Editorial tactile noise grain overlay */}
       <div className="editorial-grain" aria-hidden="true" />
 

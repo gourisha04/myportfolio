@@ -4,14 +4,17 @@
 
 @layer base {
   :root {
-    --bg-ivory: #F4F1EA;
-    --charcoal: #171717;
-    --burnt-orange: #E87545;
+    --bg-main: #EAF0F8;
+    --bg-surface: #F8FAFD;
+    --accent: #7189E8;
+    --accent-secondary: #A8B8F2;
+    --text-main: #24334D;
+    --text-muted: #687891;
   }
 
   body {
-    background-color: var(--bg-ivory);
-    color: #181818;
+    background-color: #EAF0F8;
+    color: #24334D;
     overflow-x: hidden;
   }
 
@@ -20,18 +23,18 @@
     width: 7px;
   }
   ::-webkit-scrollbar-track {
-    background: #F4F1EA;
+    background: #EAF0F8;
   }
   ::-webkit-scrollbar-thumb {
-    background: #D8D2C5;
+    background: #A8B8F2;
     border-radius: 9999px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #E87545;
+    background: #7189E8;
   }
 }
 
-/* Subtle editorial grain background */
+/* Subtle dark grain background */
 .editorial-grain {
   position: fixed;
   top: 0;
@@ -40,7 +43,7 @@
   height: 100vh;
   pointer-events: none;
   z-index: 999;
-  opacity: 0.025;
+  opacity: 0.035;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 

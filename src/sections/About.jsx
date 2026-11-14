@@ -1,143 +1,164 @@
 import React from 'react';
 import SectionHeading from '../components/SectionHeading';
-import { Download, ArrowUpRight, Code2, Server, Award, MapPin, GraduationCap, CheckCircle2 } from 'lucide-react';
+import { Download, User, Mail, MapPin, GraduationCap, Award, Code, ExternalLink } from 'lucide-react';
+import profileImg from '../assets/profile.png';
 
 export default function About() {
   return (
-    <section id="about" className="py-14 sm:py-16 lg:py-20 border-b border-ink-border/50 bg-white">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+    <section id="about" className="py-14 sm:py-20 lg:py-24 border-b border-[#A8B8F2]/30 bg-[#EAF0F8]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <SectionHeading
           tag="About Me"
-          title="Bridging design sensibility with engineering rigor."
-          subtitle="A developer dedicated to crafting fast, responsive, and intuitive web applications."
+          title="Know Who I Am"
+          subtitle="A developer passionate about building clean, performant, and responsive web experiences."
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+        {/* Jigar Sable Inspired Two-Column Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
           
-          {/* Left Column: Quick Profile Card & Stats */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="rounded-2xl bg-ivory-100 border border-ink-border p-5 sm:p-6 shadow-sm">
-              
-              {/* Profile Header */}
-              <div className="flex items-center gap-3.5 mb-5 pb-4 border-b border-ink-border/60">
+          {/* Left Column: Actual Profile Photograph */}
+          <div className="lg:col-span-5 flex justify-center">
+            <div className="relative group w-full max-w-[270px] xs:max-w-[310px] sm:max-w-sm md:max-w-md mx-auto">
+              {/* Soft ambient background glow */}
+              <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-[#7189E8]/25 via-[#A8B8F2]/25 to-transparent blur-xl opacity-70 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              {/* Photo Frame Container */}
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-[#F8FAFD] border-2 border-[#A8B8F2]/40 shadow-lg shadow-[#24334D]/8 transition-transform duration-500 ease-out group-hover:scale-[1.015]">
                 <img
-                  src="/profile.jpg"
-                  alt="Gourisha Rathore"
-                  className="w-14 h-14 object-cover object-top rounded-full border-2 border-burnt/40 shadow-sm"
+                  src={profileImg}
+                  alt="Gourisha Rathore - Profile Photograph"
+                  className="w-full h-auto max-h-[460px] object-cover object-top select-none transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="eager"
+                  draggable="false"
                 />
-                <div>
-                  <h3 className="font-display font-bold text-lg text-ink">
-                    Gourisha Rathore
-                  </h3>
-                  <p className="text-xs font-mono text-burnt font-semibold">
-                    Frontend & MERN Developer
-                  </p>
-                </div>
-              </div>
 
-              {/* Quick Details Table */}
-              <div className="space-y-3 font-mono text-xs">
-                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/40">
-                  <span className="text-ink-muted flex items-center gap-1.5">
-                    <GraduationCap className="w-3.5 h-3.5 text-burnt" />
-                    Degree:
-                  </span>
-                  <span className="text-ink font-semibold">B.Tech CSE (7.65 CGPA)</span>
-                </div>
-
-                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/40">
-                  <span className="text-ink-muted flex items-center gap-1.5">
-                    <Award className="w-3.5 h-3.5 text-burnt" />
-                    Diploma:
-                  </span>
-                  <span className="text-ink font-semibold">Polytechnic (8.03 CGPA)</span>
-                </div>
-
-                <div className="flex items-center justify-between py-1.5 border-b border-ink-border/40">
-                  <span className="text-ink-muted flex items-center gap-1.5">
-                    <MapPin className="w-3.5 h-3.5 text-burnt" />
-                    Location:
-                  </span>
-                  <span className="text-ink font-semibold">Gwalior, M.P., India</span>
-                </div>
-
-                <div className="flex items-center justify-between py-1.5">
-                  <span className="text-ink-muted">Status:</span>
-                  <span className="text-emerald-700 font-semibold flex items-center gap-1.5">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    Open for Job Offers
+                {/* Subtle bottom gradient vignette with name badge */}
+                <div className="absolute inset-x-0 bottom-0 p-3.5 sm:p-4 bg-gradient-to-t from-[#24334D]/85 via-[#24334D]/40 to-transparent flex items-end justify-between">
+                  <div className="min-w-0 pr-2">
+                    <p className="text-white font-display font-bold text-xs sm:text-sm tracking-wide truncate">
+                      Gourisha Rathore
+                    </p>
+                    <p className="text-[#A8B8F2] text-[10px] sm:text-xs font-mono truncate">
+                      B.Tech CSE • MITS Gwalior
+                    </p>
+                  </div>
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] sm:text-[11px] font-mono bg-[#7189E8] text-white font-medium shadow-xs shrink-0">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse" />
+                    Available
                   </span>
                 </div>
-              </div>
-
-              {/* Resume Download CTA */}
-              <div className="pt-5 mt-3 border-t border-ink-border/60">
-                <a
-                  href="/resume.pdf"
-                  download="Gourisha_Rathore_Resume.pdf"
-                  className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-mono font-medium bg-charcoal text-white hover:bg-burnt transition-colors shadow-xs"
-                >
-                  <Download className="w-3.5 h-3.5" />
-                  <span>Download Complete Resume</span>
-                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Concise Bio & Technical Highlights */}
-          <div className="lg:col-span-7 space-y-5">
+          {/* Right Column: Introduction, Professional Title, Bio, Details & Resume */}
+          <div className="lg:col-span-7 space-y-5 sm:space-y-6 text-left">
             
-            {/* Short Bio */}
-            <div className="space-y-3.5 text-sm sm:text-base text-ink-muted leading-relaxed font-normal">
+            {/* Title / Role Subheading */}
+            <div className="space-y-2">
+              <h3 className="font-display font-extrabold text-xl xs:text-2xl sm:text-3xl text-[#24334D] leading-tight">
+                I'm Gourisha and I'm a{' '}
+                <span className="text-[#7189E8]">Frontend & MERN Stack Developer</span>
+              </h3>
+              <div className="h-1 w-20 bg-gradient-to-r from-[#7189E8] to-[#A8B8F2] rounded-full" />
+            </div>
+
+            {/* Natural & Professional Bio */}
+            <div className="space-y-3 text-xs sm:text-base text-[#687891] leading-relaxed font-normal">
               <p>
-                I graduated with a Bachelor of Technology in Computer Science Engineering from <strong className="text-ink font-semibold">Madhav Institute of Technology and Science (MITS), Gwalior</strong>, following a Diploma with Distinction (8.03 CGPA) from <strong className="text-ink font-semibold">Government Women's Polytechnic College</strong>.
+                I graduated with a Bachelor of Technology in Computer Science Engineering from{' '}
+                <strong className="text-[#24334D] font-semibold">Madhav Institute of Technology and Science (MITS), Gwalior</strong>, 
+                completing my degree with a <strong className="text-[#24334D] font-semibold">7.65 CGPA</strong>, 
+                along with a Diploma with Distinction (<strong className="text-[#24334D] font-semibold">8.03 CGPA</strong>) from Government Women's Polytechnic College.
               </p>
+              
               <p>
-                I focus on modern frontend and MERN stack engineering — having engineered real-world client platforms like <strong className="text-ink font-semibold">Geet Studio</strong> and AI-integrated systems like <strong className="text-ink font-semibold">Parinay</strong>. My goal is to build clean, maintainable, and high-performance digital experiences.
+                I have hands-on experience in modern web development and the MERN stack—specializing in <strong className="text-[#24334D] font-semibold">React, Node.js, Express, and MongoDB</strong>, as well as modern tooling like Vite and Tailwind CSS. Having architected client-facing platforms like <strong className="text-[#24334D] font-semibold">Geet Studio</strong> and full-stack solutions like <strong className="text-[#24334D] font-semibold">Parinay</strong>, I focus on building reliable, performant, and maintainable applications.
+              </p>
+
+              <p>
+                My passion lies in building modern, responsive, and user-centric web applications where clean architecture, semantic code, and thoughtful design converge to solve real problems.
               </p>
             </div>
 
-            {/* Feature Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-              <div className="p-4 rounded-xl bg-ivory-100/70 border border-ink-border/80 hover:border-burnt/50 transition-colors">
-                <div className="w-8 h-8 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-2.5">
-                  <Code2 className="w-4 h-4" />
+            {/* Personal Details Grid (Jigar Sable Inspired) */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 pt-1 font-mono text-xs">
+              <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/30 shadow-xs">
+                <div className="w-8 h-8 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
+                  <User className="w-4 h-4" />
                 </div>
-                <h4 className="font-display font-bold text-sm text-ink mb-1">
-                  Frontend & React
-                </h4>
-                <p className="text-xs text-ink-muted leading-relaxed">
-                  Responsive user interfaces with React, Tailwind CSS, clean state management, and web accessibility standards.
-                </p>
+                <div className="min-w-0">
+                  <span className="block text-[10px] sm:text-[11px] text-[#687891]">Name:</span>
+                  <span className="font-semibold text-[#24334D] truncate block">Gourisha Rathore</span>
+                </div>
               </div>
 
-              <div className="p-4 rounded-xl bg-ivory-100/70 border border-ink-border/80 hover:border-burnt/50 transition-colors">
-                <div className="w-8 h-8 rounded-lg bg-burnt/10 text-burnt flex items-center justify-center mb-2.5">
-                  <Server className="w-4 h-4" />
+              <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/30 shadow-xs">
+                <div className="w-8 h-8 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
+                  <GraduationCap className="w-4 h-4" />
                 </div>
-                <h4 className="font-display font-bold text-sm text-ink mb-1">
-                  Backend & Database
-                </h4>
-                <p className="text-xs text-ink-muted leading-relaxed">
-                  Robust REST APIs using Express.js and Node.js, MongoDB document modeling, JWT auth, and third-party integrations.
-                </p>
+                <div className="min-w-0">
+                  <span className="block text-[10px] sm:text-[11px] text-[#687891]">Degree:</span>
+                  <span className="font-semibold text-[#24334D] truncate block">B.Tech CSE (MITS)</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/30 shadow-xs">
+                <div className="w-8 h-8 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
+                  <Award className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-[10px] sm:text-[11px] text-[#687891]">Academic Score:</span>
+                  <span className="font-semibold text-[#24334D] truncate block">7.65 CGPA</span>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/30 shadow-xs">
+                <div className="w-8 h-8 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
+                  <MapPin className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-[10px] sm:text-[11px] text-[#687891]">Location:</span>
+                  <span className="font-semibold text-[#24334D] truncate block">Gwalior, M.P., India</span>
+                </div>
+              </div>
+
+              <div className="sm:col-span-2 flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-[#F8FAFD] border border-[#A8B8F2]/30 shadow-xs">
+                <div className="w-8 h-8 rounded-lg bg-[#7189E8]/10 text-[#7189E8] flex items-center justify-center shrink-0">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div className="min-w-0">
+                  <span className="block text-[10px] sm:text-[11px] text-[#687891]">Email:</span>
+                  <a
+                    href="mailto:gourisharathore@gmail.com"
+                    className="font-semibold text-[#24334D] hover:text-[#7189E8] transition-colors truncate block"
+                  >
+                    gourisharathore@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
 
-            {/* Core Values Strip */}
-            <div className="p-4 rounded-xl bg-charcoal text-ivory-100 border border-charcoal-50 flex items-center justify-between flex-wrap gap-3">
-              <div className="text-xs font-mono">
-                <span className="text-burnt font-semibold">Ready for Full-Time Roles:</span>
-                <span className="text-gray-300 ml-2">Frontend Developer • React Developer • MERN Stack</span>
-              </div>
+            {/* Action Buttons: Resume & Contact */}
+            <div className="pt-2 flex flex-wrap items-center gap-3 w-full sm:w-auto">
+              <a
+                href="/resume.pdf"
+                download="Gourisha_Rathore_Resume.pdf"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-all duration-200 shadow-md hover:shadow-glow-accent hover:-translate-y-0.5"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Resume</span>
+              </a>
+
               <a
                 href="#contact"
-                className="inline-flex items-center gap-1.5 text-xs font-mono text-burnt hover:text-white transition-colors"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-mono font-medium border border-[#A8B8F2]/50 text-[#24334D] bg-[#F8FAFD] hover:bg-[#EEF4FC] hover:border-[#7189E8] hover:text-[#7189E8] transition-all duration-200 shadow-xs hover:-translate-y-0.5"
               >
-                <span>Get in touch</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span>Get In Touch</span>
+                <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
+
           </div>
 
         </div>

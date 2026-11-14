@@ -64,7 +64,7 @@ export default function CustomCursor() {
     <>
       {/* Tiny solid center dot */}
       <div
-        className="fixed top-0 left-0 w-2 h-2 bg-burnt rounded-full pointer-events-none z-[9999] transition-transform duration-75"
+        className="fixed top-0 left-0 w-2 h-2 bg-[#7189E8] rounded-full pointer-events-none z-[9999] transition-transform duration-75 shadow-glow-subtle"
         style={{
           transform: `translate3d(${pos.x - 4}px, ${pos.y - 4}px, 0) scale(${isHovered ? 0 : 1})`,
         }}
@@ -73,8 +73,8 @@ export default function CustomCursor() {
       <div
         className={`fixed top-0 left-0 rounded-full pointer-events-none z-[9998] transition-all duration-300 ease-out border ${
           isHovered
-            ? 'w-12 h-12 -ml-6 -mt-6 bg-burnt/15 border-burnt scale-110'
-            : 'w-8 h-8 -ml-4 -mt-4 border-charcoal/40 bg-transparent'
+            ? 'w-12 h-12 -ml-6 -mt-6 bg-[#7189E8]/15 border-[#7189E8] scale-110 shadow-glow-subtle'
+            : 'w-8 h-8 -ml-4 -mt-4 border-[#A8B8F2]/40 bg-transparent'
         }`}
         style={{
           transform: `translate3d(${trailingPos.x}px, ${trailingPos.y}px, 0)`,

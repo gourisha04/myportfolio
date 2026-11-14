@@ -47,9 +47,9 @@ export default function TypewriterRoles() {
   }, [currentText, isDeleting, currentRoleIndex, typingSpeed]);
 
   return (
-    <span className="inline-flex items-center text-burnt font-semibold">
+    <span className="inline-flex items-center text-[#7189E8] font-semibold">
       <span>{currentText}</span>
-      <span className="w-0.5 h-6 sm:h-7 lg:h-8 bg-burnt ml-1 animate-pulse" aria-hidden="true" />
+      <span className="w-0.5 h-6 sm:h-7 lg:h-8 bg-[#7189E8] ml-1 animate-pulse" aria-hidden="true" />
     </span>
   );
 }
