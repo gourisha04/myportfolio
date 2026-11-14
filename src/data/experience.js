@@ -4,7 +4,7 @@ export const experiences = [
     role: "MERN Stack Developer Intern",
     type: "Internship",
     location: "Gwalior, Madhya Pradesh",
-    period: "2024–2025",
+    period: "June 2026 – September 2026",
     status: "Completed",
     summary:
       "Contributed to full-stack web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js), focusing on responsive frontend component architecture, clean RESTful API integration, and collaborative Git development.",
