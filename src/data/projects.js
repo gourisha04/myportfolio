@@ -1,5 +1,35 @@
 export const projects = [
   {
+    id: "parinay-ai-wedding-planner",
+    title: "Parinay — AI Wedding Planner",
+    subtitle: "AI-Powered Wedding Production Roadmap System",
+    category: "Full-Stack MERN & AI",
+    isClient: false,
+    featured: true,
+    period: "2025",
+    overview:
+      "A full-stack MERN application that generates ceremony-specific production roadmaps for Indian weddings using generative AI. It enables couples and event planners to create multi-event schedules, specify deliverables, and receive structured video, photo, and album production plans.",
+    stack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Google Gemini API",
+      "JWT Auth",
+      "Vite"
+    ],
+    highlights: [
+      "Generates function-wise cinematic plans: photo checklist, video checklist, camera angles, music mood, and social media reel ideas.",
+      "Custom wedding album design output: cover design, page-by-page layout configurations, and typography selection.",
+      "JWT-based authentication with role-based middleware, protected routes, and tabbed production notes."
+    ],
+    liveUrl: "https://ai-wedding-planner-eosin.vercel.app/",
+    githubUrl: "https://github.com/gourisha04/AI-Wedding-Planner",
+    image: "/parinay-preview.png",
+    accentColor: "#E87545"
+  },
+  {
     id: "geet-studio",
     title: "Geet Studio",
     subtitle: "Client Platform & Studio Management System",
@@ -8,13 +38,10 @@ export const projects = [
     featured: true,
     period: "2024 — 2025",
     overview:
-      "A production full-stack web platform and administration portal developed for Geet Studio in Indore. The application provides an interactive public brand experience across four creative verticals alongside class enrollment workflows, a community artist directory, and an operations management dashboard.",
-    contribution:
-      "Engineered the full-stack architecture: built responsive React components with Tailwind CSS and Framer Motion, implemented Express.js REST API endpoints with Mongoose schemas across 9 collections, integrated role-based authentication, and created a custom analytics logger with Excel export.",
+      "A complete production web platform and administration portal engineered for Geet Studio in Indore across four creative verticals (Dance, Music, Fitness, Events) with student enrollment engine, community directory, and operations dashboard.",
     stack: [
       "React",
       "Tailwind CSS",
-      "Framer Motion",
       "Node.js",
       "Express.js",
       "MongoDB Atlas",
@@ -22,57 +49,69 @@ export const projects = [
       "Vite"
     ],
     highlights: [
-      "Four dedicated studio service verticals: Dance, Music, Fitness, and Events & Productions.",
-      "Online student class enrollment workflow with instant database capture and operational status tracking (NEW, CONTACTED, CONFIRMED, CLOSED).",
-      "Independent 13-category community directory for artists, DJs, and vendors with a private middleman quote request system.",
-      "Multi-role authentication system (Administrator, Community Lead, User) with secure session handling.",
-      "Custom analytics engine logging page entries, session durations, and funnel drop-offs with one-click Excel data export.",
-      "Non-technical administrative CMS panel for schedules, seat capacities, and content updates."
+      "Online student class enrollment workflow with instant database capture and operational status tracking.",
+      "Independent 13-category community directory for artists and vendors with quote request system.",
+      "Administrative CMS panel for schedules, seat capacities, and custom analytics logging with Excel export."
     ],
     liveUrl: "https://geetstudio.vercel.app",
     githubUrl: null,
-    clientNote: "Client production project. Codebase is proprietary under client agreement.",
+    clientNote: "Client production project under client agreement.",
     image: "/geet-studio-preview.jpg",
-    accentColor: "#E87545"
+    accentColor: "#C96538"
   },
   {
-    id: "parinay-ai-wedding-planner",
-    title: "Parinay",
-    subtitle: "AI-Powered Wedding Planning & Production System",
-    category: "Full-Stack MERN Application",
+    id: "code-editor",
+    title: "Collaborative Code Editor",
+    subtitle: "Real-Time Multi-User Code Editor",
+    category: "Full-Stack Real-Time Application",
     isClient: false,
     featured: true,
-    period: "2025",
+    period: "2024",
     overview:
-      "A full-stack MERN application that generates ceremony-specific production roadmaps for Indian weddings using generative AI. It allows couples and event planners to create multi-event schedules, specify budgets and deliverables, and receive structured production plans across dedicated dashboard views.",
-    contribution:
-      "Designed and developed the full system: constructed modular React interfaces with Framer Motion transitions, implemented Express.js routes with JWT authentication and role-based middleware, modeled Mongoose schemas for multi-day events and media references, and integrated the Google Gemini API with fallback handling to reliably produce structured JSON production guides.",
+      "A real-time collaborative code editor enabling multiple developers to work together with live code synchronization, low-latency updates, multi-language syntax support, and live user presence.",
     stack: [
-      "React",
-      "Tailwind CSS",
-      "Framer Motion",
-      "React Router",
-      "React Hook Form",
+      "React.js",
       "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-      "Google Gemini API",
-      "JWT Auth",
-      "Multer",
-      "Vite"
+      "Socket.io",
+      "Tailwind CSS",
+      "Express.js"
     ],
     highlights: [
-      "Google Gemini AI generates structured JSON wedding production plans: function-wise video plans, shot lists, album layouts, highlight film structures, and reel concepts.",
-      "Per-function cinematic plans: photo checklist, video checklist, camera angles, drone shots, music mood, color grading style, editing pace, and social media reel ideas.",
-      "Wedding album design output: cover design, page-by-page layout configurations (Full Bleed, Grid, Collage, Portrait Focus, Panoramic), colour palette, and typography.",
-      "JWT-based authentication with role-based middleware (user/admin), protected dashboard routes, and secure session handling.",
-      "Media upload system using Multer for uploading reference files per wedding function, stored and linked to AI-generated plans.",
-      "Tabbed AI output dashboard: Function-Wise Plans, Shot Checklists, Album Layout, Highlight Structure, and Production Notes — all from a single AI call."
+      "Multi-user real-time code synchronization with live cursor tracking and instant updates.",
+      "Support for multiple programming languages including JavaScript, Python, C++, and Java.",
+      "In-editor communication with integrated real-time chat support."
     ],
-    liveUrl: "https://ai-wedding-planner-eosin.vercel.app/",
-    githubUrl: "https://github.com/gourisha04/AI-Wedding-Planner",
-    image: "/parinay-preview.png",
-    accentColor: "#C96538"
+    liveUrl: null,
+    githubUrl: "https://github.com/gourisha04",
+    image: "/code-editor-preview.png",
+    accentColor: "#9E5531"
+  },
+  {
+    id: "chat-karo",
+    title: "Chat Karo",
+    subtitle: "Real-Time Instant Messaging Platform",
+    category: "Full-Stack WebSockets Application",
+    isClient: false,
+    featured: true,
+    period: "2024",
+    overview:
+      "A scalable real-time messaging web application featuring WebSocket communication for instant low-latency chat, user authentication, and fluid responsive UI.",
+    stack: [
+      "React.js",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Express.js",
+      "Tailwind CSS"
+    ],
+    highlights: [
+      "Low-latency real-time messaging powered by bidirectional WebSocket connections.",
+      "Secure user authentication, persistent chat history, and online status indicators.",
+      "Responsive conversation interface designed for smooth desktop and mobile messaging."
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/gourisha04",
+    image: "/chat-karo-preview.png",
+    accentColor: "#7B6252"
   }
 ];

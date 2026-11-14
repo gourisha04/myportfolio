@@ -42,23 +42,28 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#skills" className="hover:text-burnt transition-colors">
+                  Technical Skills
+                </a>
+              </li>
+              <li>
                 <a href="#projects" className="hover:text-burnt transition-colors">
                   Featured Projects
                 </a>
               </li>
               <li>
                 <a href="#experience" className="hover:text-burnt transition-colors">
-                  Experience & Internship
-                </a>
-              </li>
-              <li>
-                <a href="#skills" className="hover:text-burnt transition-colors">
-                  Technical Stack
+                  Work Experience
                 </a>
               </li>
               <li>
                 <a href="#education" className="hover:text-burnt transition-colors">
-                  Education & Credentials
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-burnt transition-colors">
+                  Contact Me
                 </a>
               </li>
             </ul>

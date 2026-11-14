@@ -4,11 +4,10 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './sections/Hero';
 import About from './sections/About';
+import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Experience from './sections/Experience';
-import Skills from './sections/Skills';
 import Education from './sections/Education';
-import Resume from './sections/Resume';
 import Contact from './sections/Contact';
 
 export default function App() {
@@ -23,15 +22,14 @@ export default function App() {
       {/* Navigation */}
       <Navbar />
 
-      {/* Main Content Sections */}
+      {/* Main Content Sections in requested sequence */}
       <main id="main-content">
         <Hero />
         <About />
+        <Skills />
         <Projects />
         <Experience />
-        <Skills />
         <Education />
-        <Resume />
         <Contact />
       </main>
 
