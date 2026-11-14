@@ -80,6 +80,36 @@ export default function Contact() {
       formspreeEndpoint && !formspreeEndpoint.includes('your_form_id');
 
     try {
+      // 1. Try secure serverless API route first (keeps EmailJS keys private without VITE_ prefix on Vercel)
+      try {
+        const apiResponse = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (apiResponse.ok) {
+          setStatus('success');
+          setFeedbackMessage('Thank you! Your message has been sent successfully. I will get back to you shortly.');
+          setFormData({ name: '', email: '', subject: '', message: '' });
+          return;
+        }
+
+        // If the server explicitly returned an error (other than 404), throw it to catch
+        if (apiResponse.status !== 404) {
+          const errData = await apiResponse.json().catch(() => ({}));
+          throw new Error(errData.error || 'Server submission failed');
+        }
+      } catch (apiErr) {
+        // If not a 404 fallback situation, and it was a real API error, don't silently swallow
+        if (apiErr.message !== 'Failed to fetch' && !apiErr.message.includes('404')) {
+          console.warn('Server API error, attempting direct client fallback:', apiErr);
+        }
+      }
+
+      // 2. Direct client-side EmailJS fallback (e.g. local dev with Vite where /api is not hosted)
       if (isEmailJSConfigured) {
         // Send via EmailJS with comprehensive template parameter mapping
         const templateParams = {
