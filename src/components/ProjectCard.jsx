@@ -96,12 +96,12 @@ export default function ProjectCard({ project, index, variant = 'featured' }) {
               </div>
             )}
 
-            {/* Top Badge: Client Project */}
+            {/* Top Badge: Client Project Verified */}
             <div className="absolute top-3 left-3 flex items-center gap-2">
               {project.isClient && (
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono font-semibold bg-burnt text-white shadow-sm">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-mono font-semibold bg-burnt text-white shadow-sm">
                   <Sparkles className="w-3 h-3" />
-                  Client Project
+                  Client Project Verified
                 </span>
               )}
             </div>

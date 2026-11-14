@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, Download, Github, Linkedin, Mail, Sparkles, Terminal } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Download, Github, Linkedin, Mail, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -109,54 +109,45 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Creative Portrait & Brand Card Column */}
+          {/* Personal Profile Card Column */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-xs sm:max-w-sm">
               
               {/* Outer decorative border with offset background */}
               <div className="absolute inset-0 bg-burnt/10 rounded-2xl transform rotate-2 translate-x-2 translate-y-2 pointer-events-none" />
               
-              {/* Card Container */}
-              <div className="relative bg-white border border-ink-border rounded-2xl p-3.5 sm:p-4 shadow-editorial overflow-hidden">
+              {/* Card Container — Exclusively personal profile card */}
+              <div className="relative bg-white border border-ink-border rounded-2xl p-3 sm:p-3.5 shadow-editorial overflow-hidden">
                 
                 {/* Photo Frame */}
-                <div className="relative rounded-xl overflow-hidden aspect-[4/5] max-h-[320px] sm:max-h-[360px] bg-ivory-200">
+                <div className="relative rounded-xl overflow-hidden aspect-[4/5] max-h-[340px] sm:max-h-[380px] bg-ivory-200">
                   <img
                     src="/profile.jpg"
                     alt="Gourisha Rathore"
                     className="w-full h-full object-cover object-center filter contrast-[1.02] hover:scale-105 transition-transform duration-500"
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent pointer-events-none" />
                   
-                  {/* Overlay Name Info */}
-                  <div className="absolute bottom-3 left-3 right-3 text-white">
+                  {/* Overlay Name & Education Info */}
+                  <div className="absolute bottom-3.5 left-3.5 right-3.5 text-white">
                     <span className="font-mono text-[10px] uppercase tracking-ultra text-burnt-light font-semibold block mb-0.5">
                       Software Engineer
                     </span>
-                    <h3 className="font-display font-bold text-lg sm:text-xl text-white">
+                    <h3 className="font-display font-bold text-lg sm:text-xl text-white leading-tight">
                       Gourisha Rathore
                     </h3>
                     <p className="text-[11px] text-gray-300 font-mono mt-0.5">
-                      B.Tech CSE • MITS Gwalior
+                      B.Tech CSE · MITS Gwalior
                     </p>
                   </div>
                 </div>
-
-                {/* Floating Metric / Highlight Tag */}
-                <div className="mt-3 pt-2.5 border-t border-ink-border/60 flex items-center justify-between text-xs font-mono text-ink">
-                  <div className="flex items-center gap-1.5">
-                    <Terminal className="w-3.5 h-3.5 text-burnt" />
-                    <span className="font-semibold text-[11px]">Client Project Verified</span>
-                  </div>
-                  <span className="text-[11px] text-ink-muted">Geet Studio</span>
-                </div>
               </div>
 
-              {/* Decorative Corner Element — Positioned at top-right to avoid any text overlap */}
-              <div className="absolute -top-3 -right-3 z-10 bg-charcoal text-ivory-100 px-3 py-1.5 rounded-lg text-xs font-mono shadow-md border border-charcoal-50 flex items-center gap-1.5 pointer-events-none">
+              {/* Floating Tech Stack Badge — Positioned cleanly outside at top-right without covering photo or text */}
+              <div className="absolute -top-3.5 right-4 sm:right-6 z-10 bg-charcoal text-ivory-100 px-3 py-1.5 rounded-full text-xs font-mono shadow-md border border-charcoal-50 flex items-center gap-1.5 pointer-events-none whitespace-nowrap">
                 <Sparkles className="w-3 h-3 text-burnt" />
-                <span>React • Vite • Node.js</span>
+                <span>React · Vite · Node.js</span>
               </div>
             </div>
           </div>
