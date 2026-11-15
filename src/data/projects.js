@@ -81,8 +81,8 @@ export const projects = [
       "Support for multiple programming languages including JavaScript, Python, C++, and Java.",
       "In-editor communication with integrated real-time chat support."
     ],
-    liveUrl: null,
-    githubUrl: "https://github.com/gourisha04",
+    liveUrl: "https://livecoder-1-oe65.onrender.com/",
+    githubUrl: null,
     image: "/code-editor-preview.png",
     accentColor: "#9E5531"
   },
@@ -109,8 +109,8 @@ export const projects = [
       "Secure user authentication, persistent chat history, and online status indicators.",
       "Responsive conversation interface designed for smooth desktop and mobile messaging."
     ],
-    liveUrl: null,
-    githubUrl: "https://github.com/gourisha04",
+    liveUrl: "https://chattyapp-ki7g.onrender.com/",
+    githubUrl: null,
     image: "/chat-karo-preview.png",
     accentColor: "#7B6252"
   }

@@ -77,37 +77,41 @@ export default function ProjectCard({ project }) {
         </div>
 
         {/* Bottom Actions: Live Demo & GitHub Buttons */}
-        <div className="pt-4 border-t border-[#A8B8F2]/25 flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2.5 flex-wrap">
-            {project.liveUrl && (
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-colors shadow-sm"
-              >
-                <span>Live Demo</span>
-                <ExternalLink className="w-3.5 h-3.5" />
-              </a>
-            )}
+        {(project.liveUrl || project.githubUrl || project.isClient) && (
+          <div className="pt-4 border-t border-[#A8B8F2]/25 flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2.5 flex-wrap">
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-mono font-semibold bg-[#7189E8] text-white hover:bg-[#5B74D8] transition-colors shadow-sm"
+                >
+                  <span>Live Demo</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              )}
 
-            {project.githubUrl ? (
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-medium border border-[#A8B8F2]/40 bg-[#F8FAFD] text-[#24334D] hover:text-[#7189E8] hover:border-[#7189E8] transition-colors shadow-xs"
-              >
-                <Github className="w-3.5 h-3.5" />
-                <span>Code</span>
-              </a>
-            ) : (
-              <span className="text-[11px] font-mono text-[#687891] italic">
-                Client Project (Private Repo)
-              </span>
-            )}
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-mono font-medium border border-[#A8B8F2]/40 bg-[#F8FAFD] text-[#24334D] hover:text-[#7189E8] hover:border-[#7189E8] transition-colors shadow-xs"
+                >
+                  <Github className="w-3.5 h-3.5" />
+                  <span>Code</span>
+                </a>
+              )}
+
+              {project.isClient && !project.githubUrl && (
+                <span className="text-[11px] font-mono text-[#687891] italic">
+                  {project.clientNote || "Client Project (Private Repo)"}
+                </span>
+              )}
+            </div>
           </div>
-        </div>
+        )}
 
       </div>
     </article>
