@@ -4,7 +4,7 @@ export const experiences = [
     role: "Frontend Developer Intern",
     type: "Internship",
     location: "Gwalior, Madhya Pradesh",
-    period: "2024 – 2025",
+    period: "June 2026 – September 2026",
     status: "Completed",
     summary:
       "Contributed to frontend and full-stack web development using React.js and modern JavaScript, engineering responsive component architectures, clean API integrations, and collaborative Git development workflows.",
