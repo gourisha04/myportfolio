@@ -53,7 +53,7 @@ export const projects = [
       "Independent 13-category community directory for artists and vendors with quote request system.",
       "Administrative CMS panel for schedules, seat capacities, and custom analytics logging with Excel export."
     ],
-    liveUrl: "https://geetstudio.vercel.app",
+    liveUrl: "https://geetstudio.in",
     githubUrl: null,
     clientNote: "Client production project under client agreement.",
     image: "/geet-studio-preview.jpg",
